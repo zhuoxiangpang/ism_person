@@ -210,8 +210,8 @@ if __name__ == '__main__':
     # 选用训练的权重，可用根目录下的yolov5s.pt，也可用runs/train/exp/weights/best.pt
     parser.add_argument('--weights', type=str, default='weights/yolov5l.pt', help='model.pt path(s)')
     # 检测数据，可以是图片/视频路径，也可以是'0'(电脑自带摄像头),也可以是rtsp等视频流
-    # parser.add_argument('--source', type=str, default='rtsp://admin:a1234567@10.34.131.154/cam/realmonitor?channel=1&subtype=0', help='source')  # file/folder, 0 for webcam
-    parser.add_argument('--source', type=str, default='C:\\zqr\\project\\yolov5\\data\\testImg', help='source')  # file/folder, 0 for webcam
+    parser.add_argument('--source', type=str, default='rtsp://admin:a1234567@10.34.131.154/cam/realmonitor?channel=1&subtype=0', help='source')  # file/folder, 0 for webcam
+    # parser.add_argument('--source', type=str, default='C:\\zqr\\project\\yolov5\\data\\testImg', help='source')  # file/folder, 0 for webcam
     # 网络输入图片大小
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
     # 置信度阈值，检测到的对象属于特定类（狗，猫，香蕉，汽车等）的概率
